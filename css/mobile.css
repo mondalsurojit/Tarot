@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+body {
+    background-color: #1b0f2c;
+    display: grid;
+    place-content: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+main {
+    background: radial-gradient(circle at center, #7845c3, #6239a0, #4c2b7b, #2d1b48, #1b0f2b, #1b0f2c 90%);
+    width: 100svh;
+    height: 100svh;
+    background-size: contain;
+    transform: translateY(5%);
+    display: grid;
+    place-items: center;
+}
+
+.circle {
+    color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#small-circle {
+    width: 99svw;
+    height: 50svw;
+    top: 80%;
+    border-top: 1.5px solid;
+    border-left: 0px solid;
+    border-right: 0px solid transparent;
+    border-color: #926ccb;
+    border-radius: 75svw 75svw 0 0;
+}
+
+#big-circle {
+    width: 160svw;
+    height: 80svw;
+    top: 45%;
+    border-top: 1.5px solid;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    border-bottom: 0px solid transparent;
+    border-color: #926ccb;
+    border-radius: 120svw 120svw 0 0;
+}
+
+#light-2 {
+    position: absolute;
+    left: 48%;
+    top: -65%;
+    height: 100%;
+    width: 120%;
+    opacity: 0.6;
+    background: url(../lights-2.png) no-repeat center center;
+    background-size: cover;
+    animation: glow 4s alternate infinite;
+}
+
+@keyframes glow {
+    0% {
+        transform: translate(-50%) rotate(0deg)
+    }
+
+    50% {
+        transform: translate(-50%) rotate(2deg)
+    }
+
+    100% {
+        transform: translate(-50%) rotate(-2deg)
+    }
+}
