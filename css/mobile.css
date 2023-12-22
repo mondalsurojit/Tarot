@@ -69,13 +69,10 @@ main {
     background: url(../lights-2.png) no-repeat center center;
     background-size: cover;
     animation: glow 4s alternate infinite;
+    transform: translate(-50%);
 }
 
 @keyframes glow {
-    0% {
-        transform: translate(-50%) rotate(0deg);
-    }
-
     50% {
         transform: translate(-50%) rotate(2deg);
     }
